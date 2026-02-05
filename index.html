@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Govt Salary Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h1>Salary Calculator</h1>
+  <p class="subtitle">Bihar Govt Teacher</p>
+
+  <div class="card">
+    <div class="field">
+      <label>Basic Pay</label>
+      <input type="number" id="basic" placeholder="₹ Enter basic pay">
+    </div>
+
+    <div class="field">
+      <label>DA (%)</label>
+      <input type="number" id="da" value="58">
+    </div>
+
+    <div class="field">
+      <label>HRA</label>
+      <select id="hra">
+        <option value="20">20% (Urban)</option>
+        <option value="10">10% (Semi-Urban)</option>
+        <option value="7.5">7.5% (Rural)</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>Medical Allowance</label>
+      <input type="number" id="medical" value="1000">
+    </div>
+
+    <div class="field">
+      <label>NPS (%)</label>
+      <input type="number" id="nps" value="10">
+    </div>
+
+    <button onclick="calculateSalary()">Calculate Salary</button>
+  </div>
+
+  <div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
